@@ -21,10 +21,14 @@
     "url": "git+https://github.com/thomashoneyman/purescript-halogen-realworld.git"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "cssnano": "^5.0.9",
     "http-server": "^13.0.0",
     "parcel": "^2.0.0-rc.0",
+    "postcss": "^8.3.11",
     "purescript-psa": "^0.8.2",
-    "purs-tidy": "^0.1.1"
+    "purs-tidy": "^0.1.1",
+    "tailwindcss": "^2.2.19"
   },
   "dependencies": {
     "decimal.js": "^10.3.1",
