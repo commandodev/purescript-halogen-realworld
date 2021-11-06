@@ -15,7 +15,7 @@
     "bundle:build": "spago build --purs-args '--codegen corefn'",
     "bundle:dce": "zephyr -f Main.main",
     "bundle:parcel": "parcel build assets/index.html --public-url '.' --no-source-maps",
-    "build": "npm run bundle:build && npm run bundle:dce && npm run bundle:parcel"
+    "build": "npm run spago && npm run bundle:parcel"
   },
   "repository": {
     "type": "git",
