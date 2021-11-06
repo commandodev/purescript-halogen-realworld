@@ -6,15 +6,16 @@
   "scripts": {
     "postinstall": "spago install",
     "clean": "rm -rf node_modules output dce-output .spago dist/* *.lock .cache",
-    "build": "spago build",
+    "spago": "spago build",
     "watch": "spago build --watch",
     "serve": "http-server dist",
+    "start": "npm run serve",
     "serve-dev": "parcel dev/index.html --open",
     "test": "spago test",
     "bundle:build": "spago build --purs-args '--codegen corefn'",
     "bundle:dce": "zephyr -f Main.main",
     "bundle:parcel": "parcel build assets/index.html --public-url '.' --no-source-maps",
-    "bundle": "npm run bundle:build && npm run bundle:dce && npm run bundle:parcel"
+    "build": "npm run bundle:build && npm run bundle:dce && npm run bundle:parcel"
   },
   "repository": {
     "type": "git",
